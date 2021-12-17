@@ -1,8 +1,7 @@
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
   font-size: 0.875rem;
 }
 ul {
@@ -72,20 +71,20 @@ p {
 .btn {
   text-transform: uppercase;
   background: transparent;
-  color: var(--clr-black);
+  color: black;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
-  transition: var(--transition);
+  transition: 0.4s;
   font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
+  border: 2px solid black;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+  color: white;
+  background: black;
 }
 /* section */
 .section {
@@ -107,19 +106,14 @@ main {
   display: grid;
   place-items: center;
 }
-/*
-=============== 
-Modal
-===============
-*/
 .hero {
   min-height: 100vh;
-  background: url("./hero.jpeg") center/cover no-repeat;
+  background-color: lightgoldenrodyellow;
   display: grid;
   place-items: center;
 }
 .banner {
-  background: var(--clr-white);
+  background: white;
   padding: 4rem 0;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
@@ -129,9 +123,9 @@ Modal
 }
 .modal-btn {
   margin-top: 2rem;
-  background: var(--clr-primary-5);
+  background: lightblue;
   border-color: var(--clr-primary-5);
-  color: var(--clr-white);
+  color: white;
 }
 .modal-btn:hover {
   background: transparent;
@@ -146,7 +140,7 @@ Modal
   background: rgba(73, 166, 233, 0.5);
   display: grid;
   place-items: center;
-  transition: var(--transition);
+  transition: 0.4s;
   visibility: hidden;
   z-index: -10;
 }
@@ -156,7 +150,7 @@ Modal
   z-index: 10;
 }
 .modal-container {
-  background: var(--clr-white);
+  background: white;
   border-radius: var(--radius);
   width: 90vw;
   height: 30vh;
@@ -173,11 +167,11 @@ Modal
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: maroon;
   cursor: pointer;
-  transition: var(--transition);
+  transition: 0.4s;
 }
 .close-btn:hover {
-  color: var(--clr-red-light);
+  color: red;
   transform: scale(1.3);
 }
